@@ -1,0 +1,288 @@
+/* Global Manual Class Start */
+
+.do-display-block {
+    display: block;
+}
+/* Manual Margin Top Class*/
+.do-mt-1 {
+    margin-top: 3px;
+}
+.do-mt-2 {
+    margin-top: 5px;
+}
+.do-mt-3 {
+    margin-top: 8px;
+}
+.do-mt-4 {
+    margin-top: 13px;
+}
+.do-mt-5 {
+    margin-top: 21px;
+}
+
+/* Manual Margin Bottom Class*/
+.do-mb-1 {
+    margin-buttom: 3px;
+}
+.do-mb-2 {
+    margin-buttom: 5px;
+}
+.do-mb-3 {
+    margin-buttom: 8px;
+}
+.do-mb-4 {
+    margin-buttom: 13px;
+}
+.do-mb-5 {
+    margin-buttom: 21px;
+}
+/*Manual Margin Left Class*/
+.do-ml-1 {
+    margin-left: 3px;
+}
+.do-ml-2 {
+    margin-left: 5px;
+}
+.do-ml-3 {
+    margin-left: 8px;
+}
+.do-ml-4 {
+    margin-left: 13px;
+}
+.do-ml-5 {
+    margin-left: 21px;
+}
+/*Manual Margin Right Class*/
+.do-mr-1 {
+    margin-right: 3px;
+}
+.do-mr-2 {
+    margin-right: 5px;
+}
+.do-mr-3 {
+    margin-right: 8px;
+}
+.do-mr-4 {
+    margin-right: 13px;
+}
+.do-mr-5 {
+    margin-right: 21px;
+}
+.bg-color-info {
+  background-color: #1ab6cf;
+}
+.bg-color-success {
+  background-color: #34cfa4;
+}
+.bg-color-warning {
+  background-color: #ffc721;
+}
+.bg-color-danger {
+  background-color: #ff2159;
+}
+/*Left-Right Board */
+.is-border-lr{
+    border-left: 2px solid #c1c1c1;
+    border-right: 2px solid #c1c1c1;
+}
+.brand-link {
+    background-color: #3C4252;
+    padding: 21px 0 13px 0;
+    border-bottom: none !important;
+}
+.nav-sub-icon {
+    font-size: 1rem !important;
+    margin-right: .3rem !important;
+}
+.do-user-name {
+    font-size: 15px;
+
+    margin: 8px 0 0 0;
+}
+.do-user-email {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.do-user-profile {
+    height: 72px;
+    width: 72px;
+    padding: 3px;
+    background-color: #343a40;
+    margin-left: 36%;
+    border-radius: 3px;
+
+}
+.do-user-profile-img {
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.mb {
+    margin-bottom: 125px;
+}
+.user-custom-dropdown {
+    margin-top: 8px;
+    margin-right: -8px;
+}
+/* Overwrite the default css styling */
+.main-header {
+  border-bottom: none;
+}
+
+/* Partial CSS Class Start*/
+.do-footer {
+    padding: 65px 13px;
+}
+.is-inner-footer {
+    max-height: 144px;
+    max-width: 233px;
+}
+
+/* Admin Login Panel Area Style Sheet Started */
+.do-date-time {
+    background-color: #3C4252;
+    width: 220px;
+}
+.do-separator {
+    background-color: #3C4252;
+    padding-right: 3rem !important;
+}
+.dropdown-item:hover {
+    background-color: transparent;
+}
+.dropdown-item {
+    color: #c1c1c1;
+}
+.do-nav-separator {
+    color: #c1c1c1;
+    margin-right: 10px;
+}
+.static-owner-avatar {
+    margin-left: 40%;
+    margin-bottom: 21px;
+}
+.login-container {
+    margin-top: 21vh;
+    margin-left: 33vw;
+}
+
+#formWrapper {
+    position: absolute;
+}
+
+div#form{
+    position: absolute;
+    width:450px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+    padding: 55px 0;
+}
+div.form-item{
+    position: relative;
+    display: block;
+    margin-left: 13%;
+}
+div.custom-separator {
+    margin-bottom: 13px;
+}
+input{
+    transition: all .2s ease-in-out;
+}
+input.form-style{
+    color:#8a8a8a;
+    display: block;
+    width: 80%;
+    height: 28px;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-clip: padding-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-color: #fff;
+    font-family:'HelveticaNeue','Arial', sans-serif;
+    font-size: 16px;
+    letter-spacing: .8px;
+}
+div.form-item .form-style:focus{
+    outline: none;
+    border: 1px solid #1a73e8;
+    border-radius: 5px;
+    color: #222222;
+}
+div.form-item p.formLabel {
+    position: absolute;
+    left:13px;
+    margin-bottom: 13px;
+    color:#bbb;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+}
+.formTop{
+    top:-21px !important;
+    left:20px; background-color: #fff;
+    font-size: 13px;
+    color: #1a73e8 !important;
+    transition: all .2s ease-in-out;
+}
+.formStatus{
+    color:#8a8a8a !important;
+    transition: all .2s ease-in-out;
+}
+
+/* Manual Check Box Styling Started*/
+input[type="checkbox"]{
+    appearance: initial;
+    -webkit-appearance: initial;
+
+    width: 21px;
+    height: 21px;
+    border: 2px solid #1a73e8;
+    border-radius: 5px;
+    position: relative;
+}
+input[type="checkbox"]:checked {
+    background: #1a73e8;
+    border-radius: 5px;
+}
+input[type="checkbox"]:checked:after {
+    content: "\2713";
+    color: #fff;
+    font-weight:bold;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.forgotPassword {
+    font-size: 18px;
+}
+input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    margin-right: 8px;
+    bottom: 3px;
+}
+.email-error,
+.password-error {
+    text-transform: uppercase;
+    color: #DB4437;
+    font-size: 13px;
+    padding-left: 8px;
+}
+.submitButton {
+    border: 1px solid #0F9D58;
+    border-radius: 5px;
+    width: 105px;
+    height: 45px;
+    background-color: #0F9D58 ;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 15px;
+}
