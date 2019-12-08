@@ -104,7 +104,7 @@
                     <img class="is-inner-footer" src="{{ asset('assets/img/logo/amara.png') }}" alt="">
                 </div>
                 <div class="column">
-                    <h1 class="is-size-4">conX Restaurant</h1>
+                    <h1 class="is-size-5 do-underline">conX Restaurant</h1>
                     <div class="do-footer-locale">
                         <div class="">
                             <a class="has-text-light do-display-block do-mt-4">
@@ -115,12 +115,11 @@
                                 <i class="icon-mobile do-mr-3"></i>
                                 017-889-94455-210
                             </a>
-                            <a class="has-text-light do-display-block do-mt-3 is-size-4">
+                            <a class="has-text-light do-display-block do-mt-5 is-size-4">
                                 <i class="fab fa-facebook-square do-mr-2"></i>
                                 <i class="fab fa-twitter-square do-mr-2"></i>
                                 <i class="fab fa-instagram do-mr-2"></i>
                                 <i class="fab fa-youtube-square"></i>
-                                <i class="fas fa-cog"></i>
                             </a>
                             <a class="has-text-light do-display-block do-mt-3 is-size-6">
                                 All Right Reserved Dr. Mams.
@@ -129,10 +128,56 @@
                     </div>
                 </div>
                 <div class="column">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Accusantium adipisci aliquid animi, architecto blanditiis consequuntur eveniet
-                    expedita id ipsum laborum pariatur possimus.
-                    Accusantium est expedita iure officia optio repellat, temporibus?
+                    <h1 class="is-size-5">Company</h1>
+                    <div class="do-footer-locale">
+                        <div class="">
+                            <a class="has-text-light do-display-block do-mt-4">
+                                About Us
+                            </a>
+                            <a class="has-text-light do-display-block do-mt-3">
+                                Contact Us
+                            </a>
+                            <a class="has-text-light do-display-block do-mt-3">
+                                Career
+                            </a>
+                            <a class="has-text-light do-display-block do-mt-3">
+                                Privacy Policy
+                            </a>
+                            <a class="has-text-light do-display-block do-mt-3">
+                                Terms & Conditions
+                            </a>
+                            <a class="has-text-light do-display-block do-mt-3">
+                                Documents and Arguments
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 class="is-size-5">Partner</h1>
+                    <div class="do-footer-locale">
+                        <div class="">
+                            <a class="has-text-light do-display-block do-mt-4">
+                                About Us
+                            </a>
+                            <a class="has-text-light do-display-block do-mt-3">
+                                Contact Us
+                            </a>
+                            <a class="has-text-light do-display-block do-mt-3">
+                                Career
+                            </a>
+                            <a class="has-text-light do-display-block do-mt-3">
+                                Privacy Policy
+                            </a>
+                            <a class="has-text-light do-display-block do-mt-3">
+                                Terms & Conditions
+                            </a>
+                            <a class="has-text-light do-display-block do-mt-3">
+                                Documents and Arguments
+                            </a>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

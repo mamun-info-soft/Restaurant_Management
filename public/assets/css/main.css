@@ -286,3 +286,12 @@ input[type=checkbox] {
     font-size: 16px;
     margin-top: 15px;
 }
+.do-underline::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 34px;
+    background-color: #fff;
+    margin-top: 35px;
+    margin-left: 3px;
+}

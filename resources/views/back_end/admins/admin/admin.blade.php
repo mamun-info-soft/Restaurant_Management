@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="login-container">
-        <form action="" method="post">
+        <form action="{{ route('admin.processLogin') }}" method="post">
             @csrf
             <div id="formWrapper">
                 <div id="form">
@@ -19,7 +19,7 @@
                     </div>
                     <div class="form-item custom-separator">
                         <p class="formLabel">Email or phone</p>
-                        <input type="email" name="email" id="email" class="form-style" autocomplete="off"/>
+                        <input type="email" name="email" id="email" class="form-style" value="{{ old('email') }}" autocomplete="off"/>
                         <small class="email-error"></small>
                     </div>
 

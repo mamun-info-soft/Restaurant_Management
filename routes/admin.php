@@ -12,6 +12,16 @@
 */
 Route::prefix('admin')->group(function () {
 
+    Route::get('/rs-admin', [
+        'uses'  => 'AdminLoginController@showLoginForm',
+        'as'    => '/rs-admin'
+    ])->name('admin.login');
+
+    Route::post('/rs-admin', [
+        'uses'  => 'AdminLoginController@processLogin',
+        'as'    => '/rs-admin'
+    ])->name('admin.processLogin');
+
     Route::get('/dashboard', [
         'uses'  => 'AdminController@dashboard',
         'as'    =>  '/dashboard'
