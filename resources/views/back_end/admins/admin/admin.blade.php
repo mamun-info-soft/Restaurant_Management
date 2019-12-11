@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="login-container">
-        <form action="{{ route('admin.processLogin') }}" method="post">
+        <form method="POST" action="{{ route('login') }}">
             @csrf
             <div id="formWrapper">
                 <div id="form">

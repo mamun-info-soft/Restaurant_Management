@@ -11,8 +11,5 @@
 |
 */
 
-Route::get('/', [
-    'uses'  => 'FrontController@index',
-    'as'    => '/'
-])->name('front.index');
+Route::get('/', 'FrontController@index')->name('front.index');
 

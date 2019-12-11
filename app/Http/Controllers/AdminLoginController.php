@@ -10,27 +10,33 @@ class AdminLoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest:admin');
-//        $this->middleware('auth:admin')->except('logout');
     }
 
     public function showLoginForm()
     {
         return view('back_end.admins.admin.admin');
     }
-
     public function processLogin(Request $request)
     {
-        // Validate Admin Login Data
-        $this->validate($request, [
-            'email' => 'required ',
-            'password' => 'required | min:3'
+        $this->validate($request,[
+            'email' => 'required',
+            'password' => 'required'
         ]);
 
-        //Attempt the admin log in the system
-        if (!Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])){
-            return redirect()->back()->withInput($request->only('email'));
+        if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])){
+            return redirect()->intended(route('dashboard'));
         }
-        // If Login Successful
-        return redirect()->intended(route('admin.dashboard'));
+        return redirect()->back();
     }
+    public function dashboard()
+    {
+        return view('back_end.dashboard.dashboard');
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->intended(route('front.index'));
+    }
+
 }

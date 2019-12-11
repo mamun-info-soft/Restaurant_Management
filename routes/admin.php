@@ -11,21 +11,15 @@
 |
 */
 Route::prefix('admin')->group(function () {
-
     Route::get('/rs-admin', [
         'uses'  => 'AdminLoginController@showLoginForm',
-        'as'    => '/rs-admin'
-    ])->name('admin.login');
+        'as'    =>  '/rs-admin'
+    ]);
 
-    Route::post('/rs-admin', [
-        'uses'  => 'AdminLoginController@processLogin',
-        'as'    => '/rs-admin'
-    ])->name('admin.processLogin');
+    Route::post('/rs-admin','AdminLoginController@processLogin')->name('login');
+    Route::get('/dashboard','AdminLoginController@dashboard')->name('dashboard');
+    Route::get('/logout','AdminLoginController@logout')->name('logout');
 
-    Route::get('/dashboard', [
-        'uses'  => 'AdminController@dashboard',
-        'as'    =>  '/dashboard'
-    ])->name('admin.dashboard');
 });
 
 //User Login and Registration Route Section

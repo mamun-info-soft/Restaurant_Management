@@ -11,7 +11,7 @@ class AdminController extends Controller
 //        $this->middleware('auth:admin');
     }
 
-    public function dashboard() {
-        return view('back_end.dashboard.dashboard');
-    }
+//    public function dashboard() {
+//        return view('back_end.dashboard.dashboard');
+//    }
 }

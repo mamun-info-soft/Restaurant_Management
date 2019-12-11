@@ -156,7 +156,7 @@
                         <span>Lock Screen</span>
                     </a>
 
-                    <a href="#" class="dropdown-item px-4 pb-3">
+                    <a href="{{ route('logout') }}" class="dropdown-item px-4 pb-3">
                         <i class="fal fa-sign-out-alt do-nav-separator"></i>
                         <span>Log Out</span>
                     </a>
