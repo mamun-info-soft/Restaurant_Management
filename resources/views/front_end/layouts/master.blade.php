@@ -37,8 +37,8 @@
                             Home
                         </a>
 
-                        <a class="navbar-item">
-                            About Us
+                        <a href="{{ route('user.signin')}}" class="navbar-item">
+                            Login / Registration
                         </a>
 
                         <div class="navbar-item has-dropdown is-hoverable">
@@ -76,13 +76,20 @@
                                 <a class="navbar-item is-size-7">
                                     Elements
                                 </a>
-                                <a class="navbar-item">
-                                    Component
-                                </a>
-                                <hr class="navbar-divider">
-                                <a class="button is-small">
-                                    Sign Out
-                                </a>
+{{--                                @auth--}}
+
+{{--                                <hr class="navbar-divider">--}}
+{{--                                    <a href="{{ route('user.sign') }}" class="button is-small">--}}
+{{--                                        Sign In--}}
+{{--                                    </a>--}}
+{{--                                @else--}}
+{{--                                    <a class="navbar-item">--}}
+{{--                                        {{Auth::user()->name}}--}}
+{{--                                    </a>--}}
+{{--                                <a href="{{ route('user.logout') }}" class="button is-small">--}}
+{{--                                    Sign out--}}
+{{--                                </a>--}}
+{{--                                    @endauth--}}
                             </div>
                         </div>
                     </div>
@@ -93,7 +100,6 @@
         <!-- Application Header Section End With Navigation -->
 
         <!-- Main Image Slider Section Start -->
-
 
         <!-- Main Image Slider Section Start -->
 

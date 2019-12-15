@@ -9,7 +9,7 @@ E-Commerce.
 
 Installation
 -
-* To run this application type`
+* To run this application type
 `composer update` or `composer update` command into command prompt.
 
 * Type `npm install` and then `npm run dev`

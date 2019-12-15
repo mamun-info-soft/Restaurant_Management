@@ -356,7 +356,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages/forms/advanced.html" class="nav-link">
+                                <a href="{{ route('menu.show-add-item') }}" class="nav-link">
                                     <i class="fal fa-dot-circle nav-sub-icon"></i>
                                     <p>Add Food Item</p>
                                 </a>
@@ -486,7 +486,7 @@
                     <div class="col-sm-7">
                         <div class="input-group mb-2 mr-sm-2">
                             <input type="text" class="form-control-sm do-date-time" id="doDateTime"
-                                   style="border: none" readonly onload="myDate()">
+                                   style="border: none; color: #fff; font-size: 15px" readonly>
                             <div class="input-group-append">
                                 <div class="input-group-text bg-danger" style="border: none"><i class="fal fa-calendar-alt"></i></div>
                             </div>
@@ -497,6 +497,7 @@
         </div>
         <!-- /.content-header -->
         @yield('dashboard')
+        @yield('add-new-food-menu')
     </div>
     <!-- /.content-wrapper -->
 
@@ -527,21 +528,16 @@
 <script src="{{ asset('/back_end/dist/js/adminlte.js') }}"></script>
 <script src="{{ asset('/back_end/dist/js/pages/dashboard.js') }}"></script>
 <script >
-    // document.getElementById('doDateTime').addEventListener('load',myFunction());
-
-    function myDate() {
+    window.onload = function () {
         var calender = {
-            // weekday: 'long',
+            weekday: 'long',
             year:    'numeric',
-            month: 'long',
+            month: 'short',
             day: 'numeric'
         }
         var today = new Date();
         var todayDate = today.toLocaleDateString("en-US", calender);
-        // $('#doDateTime').val(todayDate);
-        document.getElementById('doDateTime').innerHTML = todayDate;
-        console.log(todayDate);
-
+        document.getElementById('doDateTime').value = todayDate;
     }
 </script>
 </body>

@@ -1,96 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <title>Login</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animate.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animsition.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/util.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
-
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Login</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
 </head>
-<body style="background-color: #666666;">
+<body>
 
-<div class="limiter">
-    <div class="container-login100">
-        <div class="wrap-login100">
-            <form class="login100-form validate-form">
-					<span class="login100-form-title p-b-43">
-						Login to continue
-					</span>
-
-                <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                    <input class="input100" type="text" name="email">
-                    <span class="focus-input100"></span>
-                    <span class="label-input100">Email or Username</span>
-                </div>
-
-
-                <div class="wrap-input100 validate-input" data-validate="Password is required">
-                    <input class="input100" type="password" name="pass">
-                    <span class="focus-input100"></span>
-                    <span class="label-input100">Password</span>
-                </div>
-
-                <div class="flex-sb-m w-full p-t-3 p-b-32">
-                    <div class="contact100-form-checkbox">
-                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-                        <label class="label-checkbox100" for="ckb1">
-                            Remember me
-                        </label>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto mt-5">
+                <form action="#" method="post">
+                    <h3 class="my-3">Provide your credentials</h3>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
-
-                    <div>
-                        <a href="#" class="txt1">
-                            Forgot Password?
-                        </a>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
-                </div>
-
-
-                <div class="container-login100-form-btn">
-                    <button class="login100-form-btn">
-                        Login
-                    </button>
-                </div>
-
-                <div class="text-center p-t-46 p-b-20">
-						<span class="txt2">
-							or sign up using
-						</span>
-                </div>
-
-                <div class="login100-form-social flex-c-m">
-                    <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
-                        <i class="fa fa-facebook-f" aria-hidden="true"></i>
-                    </a>
-
-                    <a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </form>
-
-{{--            <div class="login100-more" style="background-image: url()">--}}
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                    <a href="{{ route('user.regi') }}">Don't have any Account? Create your account.</a>
+                </form>
             </div>
         </div>
     </div>
-</div>
 
-
-
-
-
-<!--===============================================================================================-->
-<script src="{{ asset('assets/js/jquery-3.2.1.min.js') }}"></script>
-<!--===============================================================================================-->
-<script src="{{ asset('assets/js/animsition.min.js') }}"></script>
-<!--===============================================================================================-->
-<script src="{{ asset('assets/js/popper.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('assets/js/main_two.js') }}"></script>
-
+    <script src="{{ asset('assets/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 </body>
 </html>

@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/', 'FrontController@index')->name('front.index');
+Route::get('/', 'FrontController@index')->name('index');
 

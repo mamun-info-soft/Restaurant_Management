@@ -24,15 +24,19 @@ Route::prefix('admin')->group(function () {
 
 //User Login and Registration Route Section
 
-Route::prefix('user')->group(function () {
+Route::prefix('user/')->group(function () {
 
-    Route::get('/login', [
-        'uses'  => 'UserController@showLogin',
-        'as'    => '/login'
-    ])->name('user.login');
+    Route::get('registration', 'UserController@showRegistration')->name('user.regi');
+    Route::post('registration', 'UserController@create')->name('user.create');
 
-    Route::get('/registration', [
-        'uses'  => 'UserController@showRegistration',
-        'as'    => '/registration'
-    ])->name('user.registration');
+    Route::get('login', 'UserController@showLogin')->name('user.signin');
+    Route::post('login', 'UserController@processLogin')->name('user.login');
+    Route::post('logout', 'UserController@cLogout')->name('user.logout');
+});
+
+//Dashboard Item Route Section
+Route::prefix('dashboard/')->group(function (){
+    //Food Menu Item Adding Route
+    Route::get('add-menu','MenuItemController@index')->name('menu.show-add-item');
+    Route::post('add-menu','MenuItemController@create')->name('menu.process-add-item');
 });
