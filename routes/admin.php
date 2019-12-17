@@ -31,7 +31,8 @@ Route::prefix('user/')->group(function () {
 
     Route::get('login', 'UserController@showLogin')->name('user.signin');
     Route::post('login', 'UserController@processLogin')->name('user.login');
-    Route::post('logout', 'UserController@cLogout')->name('user.logout');
+    Route::get('dashboard', 'UserController@uDash')->name('user.dash');
+    Route::get('logout', 'UserController@cLogout')->name('user.logout');
 });
 
 //Dashboard Item Route Section

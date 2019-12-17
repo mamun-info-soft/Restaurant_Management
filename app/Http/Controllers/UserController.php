@@ -51,15 +51,20 @@ class UserController extends Controller
         ]);
 
         if (Auth::guard('web')->attempt(['email' => $request->email, 'password' => $request->password])){
-            return redirect()->intended(route('index'));
+            return redirect()->intended(route('user.dash'));
         }
 
         return redirect()->back();
+    }
+    public function uDash()
+    {
+        return view('back_end.admins.users.users');
     }
 
     public function cLogout()
     {
         Auth::logout();
+        return redirect()->intended(route('index'));
     }
 
 }
