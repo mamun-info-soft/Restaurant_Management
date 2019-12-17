@@ -1,109 +1,64 @@
-
-/* Global Manual Class Start */
-
-.do-display-block {
-    display: block;
+/* Overwrite default CSS section from here */
+.blockquote {
+    font-size: 1rem;
+    border-left: 0.3rem solid #DB4437;
 }
-/* Manual Margin Top Class*/
-.do-mt-1 {
-    margin-top: 3px;
-}
-.do-mt-2 {
-    margin-top: 5px;
-}
-.do-mt-3 {
-    margin-top: 8px;
-}
-.do-mt-4 {
-    margin-top: 13px;
-}
-.do-mt-5 {
-    margin-top: 21px;
+.main-header {
+    border-bottom: none;
 }
 
-/* Manual Margin Bottom Class*/
-.do-mb-1 {
-    margin-buttom: 3px;
+/* Manual CSS section started from here */
+.bg-color-info {
+    background-color: #1ab6cf;
 }
-.do-mb-2 {
-    margin-buttom: 5px;
+.bg-color-success {
+    background-color: #34cfa4;
 }
-.do-mb-3 {
-    margin-buttom: 8px;
+.bg-color-warning {
+    background-color: #ffc721;
 }
-.do-mb-4 {
-    margin-buttom: 13px;
+.bg-color-danger {
+    background-color: #ff2159;
 }
-.do-mb-5 {
-    margin-buttom: 21px;
+.mb {
+    margin-bottom: 125px;
 }
-/*Manual Margin Left Class*/
-.do-ml-1 {
-    margin-left: 3px;
-}
-.do-ml-2 {
-    margin-left: 5px;
-}
-.do-ml-3 {
-    margin-left: 8px;
-}
-.do-ml-4 {
-    margin-left: 13px;
-}
-.do-ml-5 {
-    margin-left: 21px;
-}
-/*Manual Margin Right Class*/
-.do-mr-1 {
-    margin-right: 3px;
-}
-.do-mr-2 {
-    margin-right: 5px;
-}
-.do-mr-3 {
-    margin-right: 8px;
-}
-.do-mr-4 {
-    margin-right: 13px;
-}
-.do-mr-5 {
-    margin-right: 21px;
-}
+.do-user-name {
+    font-size: 15px;
 
-/*Left-Right Board */
-.is-border-lr{
-    border-left: 2px solid #c1c1c1;
-    border-right: 2px solid #c1c1c1;
+    margin: 8px 0 0 0;
 }
-.brand-link {
-    background-color: #3C4252;
-    padding: 21px 0 13px 0;
-    border-bottom: none !important;
+.do-user-email {
+    font-size: 13px;
+    margin-bottom: 0;
 }
-.nav-sub-icon {
-    font-size: 1rem !important;
-    margin-right: .3rem !important;
-}
-.user-custom-dropdown {
-    margin-top: 8px;
-    margin-right: -8px;
-}
-/* Overwrite the default css styling */
+.do-user-profile {
+    height: 72px;
+    width: 72px;
+    padding: 3px;
+    background-color: #343a40;
+    margin-left: 36%;
+    border-radius: 3px;
 
-
-/* Partial CSS Class Start*/
-.do-footer {
-    padding: 65px 13px;
 }
-.is-inner-footer {
-    max-height: 144px;
-    max-width: 233px;
+.do-user-profile-img {
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-
-/* Admin Login Panel Area Style Sheet Started */
 .do-date-time {
     background-color: #3C4252;
-    width: 220px;
+    margin-left: 42px;
+    width: 170px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px
+}
+.do-time {
+    background-color: #3C4252;
+    widht: 20px !important;
 }
 .do-separator {
     background-color: #3C4252;

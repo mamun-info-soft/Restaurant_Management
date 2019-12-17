@@ -37,6 +37,9 @@ Route::prefix('user/')->group(function () {
 //Dashboard Item Route Section
 Route::prefix('dashboard/')->group(function (){
     //Food Menu Item Adding Route
-    Route::get('add-menu','MenuItemController@index')->name('menu.show-add-item');
-    Route::post('add-menu','MenuItemController@create')->name('menu.process-add-item');
+    Route::get('add-menu','FoodMenuController@showForm')->name('menu.show-add-item');
+    Route::post('add-menu','FoodMenuController@menuAdd')->name('menu.add-item');
+
+    //Food Menu Item Viewing Route
+    Route::get('menu','FoodMenuController@showMenu')->name('menu.view-all');
 });

@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="{{ asset('/back_end/dist/css/adminlte.min.css') }}">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="{{ asset('/back_end/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets/css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('/back_end/plugins/summernote/summernote-bs4.css') }}">
+    <link rel="stylesheet" href="{{ asset('/back_end/dist/css/main.css') }}">
 
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -26,14 +27,14 @@
     <!-- Main Navbar Section Started Here -->
     <nav class="main-header navbar navbar-expand navbar-dark navbar-gray-dark">
         <!-- Left navbar links -->
-        <ul class="navbar-nav">
-            <li class="nav-item d-none d-sm-inline-block">
-                <a href="" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item d-none d-sm-inline-block">
-                <a href="#" class="nav-link">Contact</a>
-            </li>
-        </ul>
+{{--        <ul class="navbar-nav">--}}
+{{--            <li class="nav-item d-none d-sm-inline-block">--}}
+{{--                <a href="" class="nav-link">Home</a>--}}
+{{--            </li>--}}
+{{--            <li class="nav-item d-none d-sm-inline-block">--}}
+{{--                <a href="#" class="nav-link">Contact</a>--}}
+{{--            </li>--}}
+{{--        </ul>--}}
 
         <!-- SEARCH FORM -->
         <form class="form-inline ml-3">
@@ -350,7 +351,7 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="pages/forms/general.html" class="nav-link">
+                                <a href="{{ route('menu.view-all') }}" class="nav-link">
                                     <i class="fal fa-dot-circle nav-sub-icon"></i>
                                     <p>All Food Item</p>
                                 </a>
@@ -479,14 +480,13 @@
         <!-- Content Header (Page header) -->
         <div class="content-header">
             <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-5">
-                        <h5 class="m-0 text-muted">Dashboard</h5>
+                <div class="row mt-3">
+                    <div class="col-sm-9">
+                        <h5 class="ml-2 text-muted">Dashboard</h5>
                     </div><!-- /.col -->
-                    <div class="col-sm-7">
-                        <div class="input-group mb-2 mr-sm-2">
-                            <input type="text" class="form-control-sm do-date-time" id="doDateTime"
-                                   style="border: none; color: #fff; font-size: 15px" readonly>
+                    <div class="col-sm-3">
+                        <div class="input-group ">
+                            <input type="text" class="form-control-sm do-date-time" id="doDateTime" readonly>
                             <div class="input-group-append">
                                 <div class="input-group-text bg-danger" style="border: none"><i class="fal fa-calendar-alt"></i></div>
                             </div>
@@ -497,7 +497,8 @@
         </div>
         <!-- /.content-header -->
         @yield('dashboard')
-        @yield('add-new-food-menu')
+        @yield('add-food-menu')
+        @yield('menu')
     </div>
     <!-- /.content-wrapper -->
 
@@ -526,19 +527,11 @@
 <script src="{{ asset('/back_end/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 <!-- App -->
 <script src="{{ asset('/back_end/dist/js/adminlte.js') }}"></script>
+<script src="{{ asset('/back_end/plugins/summernote/summernote-bs4.js') }}"></script>
 <script src="{{ asset('/back_end/dist/js/pages/dashboard.js') }}"></script>
+<script src="{{ asset('/back_end/dist/js/main.js') }}"></script>
 <script >
-    window.onload = function () {
-        var calender = {
-            weekday: 'long',
-            year:    'numeric',
-            month: 'short',
-            day: 'numeric'
-        }
-        var today = new Date();
-        var todayDate = today.toLocaleDateString("en-US", calender);
-        document.getElementById('doDateTime').value = todayDate;
-    }
+
 </script>
 </body>
 </html>
